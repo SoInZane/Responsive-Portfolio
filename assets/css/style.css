@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    /* need to work on borders */
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    border: 8px #777777;
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+}
+
+.header {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #777777;  
+}
+
+.header a {
+    float: left;
+    color: #777777;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    clear: both;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-left: 240px;   
+}
+
+.header_right {
+    margin-right: 115px;
+    float: right;
+}
+
+a:link{
+    color: #666666;
+}
+
+a:hover {
+    color: #4aaaa5;
+}
+
+a:active {
+    color: #4aaaa5;
+}
+
+.container_1 {
+    background-color: #ffffff;
+    color: #777777;
+    position: relative;
+    width: 960px;
+    margin: auto;
+    
+}
+
+#container_2 {
+    background-color: #ffffff;
+    color: #777777;
+    overflow: auto;
+    float: left;
+    position: absolute;
+    width: 960px;
+    padding: 20px;
+    margin: 60px;
+        
+}
+
+h1 {
+    color: #4aaaa5;
+    border-bottom-color: 8px #777777;
+}
+h2 {
+    text-align: center;
+}
+
+#about_me_image {
+    float: left;
+    margin: 20px;
+    width: 250px;
+    height: 200px;   
+}
+
+.portfolio_images {
+    float: left;
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    margin: 20px;    
+}
+
+.text-block {
+    position: absolute;
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 0;
+    top: 130px;
+    height: 60px;
+    width: 400px;
+    text-align: center;
+    font-size: 18px;   
+}
+
+p {
+    margin: 50px;    
+}
+
+input[type=text], select, textarea {
+    width: 900px;
+    padding: 10px;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: auto;
+    resize: vertical;
+} 
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+input[type=submit]:hover {
+    background-color: #666666;
+  }
+
+
+.footer {
+    position: fixed;
+    font-size: 12px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    border-top: 8px #4aaaa5;
+}
+
+/* media queries */
+
+/* @media screen and (max-width: 980px) {
+   .header{
+    
+   }
+   .header_right{
+
+   }
+} */
+
+/* Tablet media query */
+
+@media screen and (max-width: 768px){
+    body::before {
+        content: "Tablet media query (<768px) fired";
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        background: rgba(255,255,0,0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+
+    .header{
+        width: 100%;
+
+    }
+    
+    .header a{
+        float: left;
+        text-align: center;
+    }
+    .header a.logo{
+        clear: both;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .header_right{
+        float: right;
+        margin-right: 20px;
+    }
+    }
+    .container_1 {
+        position: relative;
+        top: -10px;
+        right: 110px;
+        width: 600px
+    }
+    #container_2 {
+        right: 20px;
+        left: 0;
+        width: 680px;
+    }
+
+    input[type=text], select, textarea {
+        width: 640px;
+        
+    }
+
+    .portfolio_images {
+        float: left;
+        position: relative;
+        width: 300px;
+        margin: 5px;
+        padding: 10px;
+    
+    }
+    img {
+        width: 300px;
+    }
+    .text-block{
+        position: absolute;
+        top: 90px;
+        width: 300px;
+        
+    }
+ /* Mobile media query */
+
+@media screen and (max-width: 640px){
+    body::before {
+        content: "Mobile media query (<640px) fired";
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        background: rgba(255,255,0,0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+    
+    .header{
+        position: static;
+        overflow: hidden;
+        background-color: #4aaaa5;
+        color: #ffffff;
+    }
+    .header_right {
+        background-color: #ffffff;
+        color: #666666;
+        float: left;
+        position: relative;
+    }
+    header a {
+        margin-left: 100px;
+    }
+    .container_1 {
+        position: relative;
+        top: 10px;
+        width: 600px
+    }
+    #container_2 {
+        right: 20px;
+        left: 0;
+        width: 480px;
+    }
+    #about_me_image {
+        margin: 20px;
+        width: 420px;
+        height: 400px;   
+    }
+    p {
+        float: left;
+    }
+    input[type=text], select, textarea {
+        width: 440px;
+        
+    }
+
+    .portfolio_images {
+        float: left;
+       margin: auto;
+
+    }
+    
+
+    }    
