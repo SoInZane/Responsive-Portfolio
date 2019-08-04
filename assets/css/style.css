@@ -235,7 +235,7 @@ input[type=submit]:hover {
 
 
     /* snippet of code used to know when media query kicks in. */
-    body::before {
+    /* body::before {
         content: "Tablet media query (<768px) fired";
         font-weight: bold;
         display: block;
@@ -246,7 +246,7 @@ input[type=submit]:hover {
         left: 0;
         right: 0;
         z-index: 99;
-    }
+    } */
     .header{
         position: static;
         width: 100%;
